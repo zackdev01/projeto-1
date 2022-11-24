@@ -1,0 +1,135 @@
+@charset "UFT-8";
+
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   background-color: #e6e6e6;
+}
+
+a {
+   color: black;
+   text-decoration: none;
+}
+
+#boxinicial {
+   color: #f8f8f8;
+   background-color: #1f1c1c;
+   text-align: center;
+}
+
+.btn {
+   color: #ffffff;
+   background-color: #1f1c1c;
+   padding: 0px 8px 2px 8px;
+   border-radius: 45px;
+   margin-left: 1150px;
+   margin-bottom: 6px;
+   
+}
+.logo {
+   font-size: 24px;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   font-weight: bold;
+   text-shadow: 1px 1px 0 #686767;  
+}
+
+nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-family: system-ui,-apple-system, Arial, Helvetica, sans-serif;
+   background: #e57e1e;
+   height: 8vh;
+   padding: 20px;
+}
+
+nav.btn {
+   display: inline-block;
+}
+
+.log {
+   background-color: #292623;
+   transition-duration: 0.3s;
+}
+
+.log > a {
+   color: #d36a3a;
+   margin: 7px;
+}
+
+.log:hover{
+   background-color: #f0430e;
+   color: #e6e6e6;
+}
+
+.txtlog:hover {
+   color: #ccc5c5;
+}
+
+.nav-list {
+   list-style: none;
+   display: flex;
+   margin-left: 300px;
+}
+
+.nav-list li {
+   letter-spacing: 3px;
+   margin-left: 32px;
+   font-weight: bold;
+   padding: 5px;
+   border-radius: 40px
+}
+
+.mobile-menu {
+   cursor: pointer;
+}
+
+.mobile-menu div {
+   width: 32px;
+   height: 2px;
+   background: #e57e1e;
+   margin: 8px;
+}
+
+button {
+   color: black;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   font-size: 20px;
+   display: none;
+}
+
+@media (max-width: 999px) {
+   body {
+      overflow-x: hidden;
+   }
+   .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: aqua;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+   }
+   .nav-list {
+      margin-left: 0;
+      opacity: 0;
+  }
+   button {
+      display: block;
+   }
+}
+
+.nav-list.active {
+   transform: translateX(0);
+}
+
+
